@@ -21,6 +21,7 @@ const config: Config = {
           primary: '#d0d0d0',
           formazzi: '#263238',
           registerbt: '#A38DEB',
+          fontIntro: '#D44EE6',
       },
     },
   },
