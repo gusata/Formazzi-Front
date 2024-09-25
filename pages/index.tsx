@@ -5,6 +5,8 @@ import logo from "../public/logo.svg"
 import foguete from "../public/foguete.png"
 import { useEffect } from "react";
 import FlareCursor from "../components/cursor/cursor.js"
+import { useRouter } from "next/router";
+import Link from "next/link";
 
 
 
@@ -16,18 +18,23 @@ const inter = Inter({ subsets: ["latin"] });
 
 
 export default function Home() {
+      const router = useRouter();
+
+
+
  
 
 
   return (
     
     <main className={''} id="content">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <nav className="bg-yellow-50 border-b-2 border-primary">
   <div className="mx-1rem  px-2 sm:px-6 lg:px-8">
     <div className="relative flex h-16 items-center justify-between">
       <Image src={logo} alt="logo" className="size-[13rem] mb-[0.5rem]" />
       <div className="absolute inset-y-0 right-0 flex items-center space-x-4 pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
-       <button className="bg-transparent border-2 border-registerbt h-9 w-24 rounded-full font-crimson font-semibold text-lg text-registerbt active:bg-registerbt active:text-yellow-50 transition">Registre-se</button>
+       <button className="bg-transparent border-2 border-registerbt h-9 w-24 rounded-full font-crimson font-semibold text-lg text-registerbt active:bg-registerbt active:text-yellow-50 transition"><Link href={"/register"}>Registre-se</Link></button>
        <button className="bg-registerbt border-2 border-registerbt h-9 w-24 rounded-full font-crimson font-semibold text-lg text-yellow-50 active:bg-transparent active:text-registerbt transition ">Login</button>
       </div>
     </div>
@@ -56,7 +63,7 @@ export default function Home() {
         <div className=" snap-start flex items-center flex-row justify-between mx-32 min-h-screen h-screen relative ">
 
 
-          <div className="flex flex-col gap-8 z-10 absolute top-24 left-0">
+          <div className="flex flex-col gap-8 z-10 absolute top-24 left-0 xl:scale-[0.8] ">
             <h1 className="font-crimson font-bold text-5xl text-formazzi w-[40rem]">
               Primeiros Passos
             </h1>
@@ -72,7 +79,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="flex flex-col gap-8 z-10 absolute bottom-[20vh] right-[-5vh]  ">
+          <div className="flex flex-col gap-8 z-10 absolute bottom-[20vh] right-[-5vh] xl:scale-[0.8] ">
             <div className="w-[35rem]">
             <span className="font-crimson font-bold text-3xl text-formazzi">
             Junte-se a nós nesta jornada emocionante rumo ao sucesso profissional. </span>
