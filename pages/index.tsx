@@ -35,7 +35,7 @@ export default function Home() {
       <Image src={logo} alt="logo" className="size-[13rem] mb-[0.5rem]" />
       <div className="absolute inset-y-0 right-0 flex items-center space-x-4 pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
        <button className="bg-transparent border-2 border-registerbt h-9 w-24 rounded-full font-crimson font-semibold text-lg text-registerbt active:bg-registerbt active:text-yellow-50 transition"><Link href={"/register"}>Registre-se</Link></button>
-       <button className="bg-registerbt border-2 border-registerbt h-9 w-24 rounded-full font-crimson font-semibold text-lg text-yellow-50 active:bg-transparent active:text-registerbt transition ">Login</button>
+       <button className="bg-registerbt border-2 border-registerbt h-9 w-24 rounded-full font-crimson font-semibold text-lg text-yellow-50 active:bg-transparent active:text-registerbt transition "><Link href={"/login"}>Login</Link></button>
       </div>
     </div>
   </div>
